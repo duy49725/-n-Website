@@ -1,0 +1,70 @@
+﻿@model DoAnWebNangCao.Data.Paging.GenrePaging
+
+@{
+    ViewData["Title"] = "GenreList";
+}
+<div class="container mt-3">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <div>
+                <h2>Book</h2>
+            </div>
+            <div class="col-md-6">
+                <form asp-controller="Genre" asp-action="GenreList" method="get">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="searchString" placeholder="Title">
+                        <div class="input-group-append">
+                            <input class="btn btn-outline-secondary" type="submit" name="searchButton" value="Search">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <p>
+        <a asp-controller="Genre" asp-action="Add">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <a asp-action="GenreList" asp-route-sortOrder="GenreName">Genre Name</a>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model.genres) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GenreName)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Detail" asp-route-id="@item.Id">Details</a> |
+                    <a onclick="return window.confirm('Are you sure ?)" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+    <div class="pagination">
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li class="page-item @(ViewData["CurrentPage"].ToString() == "1" ? "disabled" : "")">
+                    <a class="page-link" href="?page=1">First</a>
+                </li>
+                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                {
+                    <li class="page-item @(ViewData["CurrentPage"].ToString() == i.ToString() ? "active" : "")">
+                        <a class="page-link" href="?page=@i">@i</a>
+                    </li>
+                }
+                <li class="page-item @(ViewData["CurrentPage"].ToString() == ViewBag.TotalPages.ToString() ? "disabled" : "")">
+                    <a class="page-link" href="?page=@ViewBag.TotalPages">Last</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

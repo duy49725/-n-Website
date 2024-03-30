@@ -1,0 +1,48 @@
+﻿@model DoAnWebNangCao.Models.Author
+
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Add</h1>
+
+<h4>Author</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Add" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AuthorName" class="control-label"></label>
+                <input asp-for="AuthorName" class="form-control" />
+                <span asp-validation-for="AuthorName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuthorEmail" class="control-label"></label>
+                <input asp-for="AuthorEmail" class="form-control" />
+                <span asp-validation-for="AuthorEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" class="form-control" type="file"/>
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nationality" class="control-label"></label>
+                <input asp-for="nationality" class="form-control" />
+                <span asp-validation-for="nationality" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

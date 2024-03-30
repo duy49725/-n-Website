@@ -1,0 +1,36 @@
+﻿@model DoAnWebNangCao.Data.SalesChartViewModel
+
+<h1>Monthly Sales Report</h1>
+
+<canvas id="salesChart" width="800" height="400"></canvas>
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var labels = @Html.Raw(Json.Serialize(Model.MonthLabels)); // Chuỗi các tháng
+        var data = @Html.Raw(Json.Serialize(Model.TotalSales)); // Mảng tổng doanh số
+
+        var ctx = document.getElementById('salesChart').getContext('2d');
+        var salesChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Total Sales',
+                    data: data,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+}

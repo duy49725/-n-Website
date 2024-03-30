@@ -1,0 +1,99 @@
+﻿@model DoAnWebNangCao.Data.Paging.CouponPaging
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container mt-3">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <h2>Discount</h2>
+        </div>
+        <div class="col-md-6">
+            <form asp-controller="Coupon" asp-action="Index" method="get">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="searchString" placeholder="Title">
+                    <div class="input-group-append">
+                        <input class="btn btn-outline-secondary" type="submit" name="searchButton" value="Search">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                <a class="btn btn-primary" asp-action="Add">Create New</a>
+            </p>
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">
+                    Code
+                </th>
+                <th scope="col">
+                    Discount Percentage
+                </th>
+                <th scope="col">
+                    Start Date
+                </th>
+                <th scope="col">
+                    End Date
+                </th>
+                <th scope="col">
+                    IsActive
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Coupons)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Code)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DiscountPercentage)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EndDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsActive)
+                    </td>
+                    <td>
+                        <a class="btn btn-info btn-sm" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a class="btn btn-secondary btn-sm" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="pagination">
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li class="page-item @(ViewData["CurrentPage"].ToString() == "1" ? "disabled" : "")">
+                    <a class="page-link" href="?page=1">First</a>
+                </li>
+                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                {
+                    <li class="page-item @(ViewData["CurrentPage"].ToString() == i.ToString() ? "active" : "")">
+                        <a class="page-link" href="?page=@i">@i</a>
+                    </li>
+                }
+                <li class="page-item @(ViewData["CurrentPage"].ToString() == ViewBag.TotalPages.ToString() ? "disabled" : "")">
+                    <a class="page-link" href="?page=@ViewBag.TotalPages">Last</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

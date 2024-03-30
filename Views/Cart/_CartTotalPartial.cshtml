@@ -1,0 +1,20 @@
+﻿@model double
+@{
+}
+<h3>Cart Summary</h3>
+<table>
+    <tr>
+        <td>Subtotal</td>
+        <td id="subtotal">$ @ViewBag.Subtotal</td>
+    </tr>
+    <tr>
+        <td>Discount</td>
+        <td id="discountAmount">$ @ViewBag.DiscountAmount</td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td id="totalAmount">$ @ViewBag.TotalAmount</td>
+    </tr>
+</table>
+<button class="normal"><a class="btn btn-primary" href="/Cart/CheckOut">Checkout</a></button>
+

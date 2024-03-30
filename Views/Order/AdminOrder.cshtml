@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Order>
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div style="width: 100%" class="mt-2">
+	<a href="/Identity/Account/Manage">Back</a>
+	<h4>My Orders</h4>
+	@if (Model != null && Model.Count() > 0)
+	{
+		<table class="table table-striped">
+			<tr>
+				<th>Order Date</th>
+				<th>Order status</th>
+				<th>User Name</th>
+				<th>Is Delete</th>
+				<th></th>
+			</tr>
+			@foreach (var order in Model)
+			{
+				<tr>
+					<th>@order.CreatedDate.ToString("dd-MM-yyyy")</th>
+					<td>@order.OrderStatus.StatusName</td>
+					<td>@order.UserName</td>
+					<td>@order.IsDeleted</td>
+					<td>
+						<a asp-action="UserOrder" asp-route-userId="@order.UserId" asp-route-orderId="@order.Id">Details</a>
+						<a asp-action="Edit" asp-route-id="@order.Id">Edit</a>
+					</td>
+				</tr>
+			}
+		</table>
+	}
+	else
+	{
+		<h5>No orders</h5>
+	}
+</div>

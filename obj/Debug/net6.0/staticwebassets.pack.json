@@ -1,0 +1,593 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DoAnWebNangCao.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DoAnWebNangCao.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\book-1.png",
+      "PackagePath": "staticwebassets\\Uploads\\book-1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\book-10.png",
+      "PackagePath": "staticwebassets\\Uploads\\book-10.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\book-2.png",
+      "PackagePath": "staticwebassets\\Uploads\\book-2.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\book-3.png",
+      "PackagePath": "staticwebassets\\Uploads\\book-3.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\book-4.png",
+      "PackagePath": "staticwebassets\\Uploads\\book-4.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\book-5.png",
+      "PackagePath": "staticwebassets\\Uploads\\book-5.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\book-6.png",
+      "PackagePath": "staticwebassets\\Uploads\\book-6.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\book-7.png",
+      "PackagePath": "staticwebassets\\Uploads\\book-7.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\book-8.png",
+      "PackagePath": "staticwebassets\\Uploads\\book-8.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\book-9.png",
+      "PackagePath": "staticwebassets\\Uploads\\book-9.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\discount-book-1.png",
+      "PackagePath": "staticwebassets\\Uploads\\discount-book-1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\discount-book-2.png",
+      "PackagePath": "staticwebassets\\Uploads\\discount-book-2.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\favicon.png",
+      "PackagePath": "staticwebassets\\Uploads\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\home-book-1.png",
+      "PackagePath": "staticwebassets\\Uploads\\home-book-1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\home-book-2.png",
+      "PackagePath": "staticwebassets\\Uploads\\home-book-2.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\home-book-3.png",
+      "PackagePath": "staticwebassets\\Uploads\\home-book-3.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\home-book-4.png",
+      "PackagePath": "staticwebassets\\Uploads\\home-book-4.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\join-bg.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\join-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\testimonial-perfil-1.png",
+      "PackagePath": "staticwebassets\\Uploads\\testimonial-perfil-1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\testimonial-perfil-2.png",
+      "PackagePath": "staticwebassets\\Uploads\\testimonial-perfil-2.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\testimonial-perfil-3.png",
+      "PackagePath": "staticwebassets\\Uploads\\testimonial-perfil-3.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\Uploads\\testimonial-perfil-4.png",
+      "PackagePath": "staticwebassets\\Uploads\\testimonial-perfil-4.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\css\\style2.css",
+      "PackagePath": "staticwebassets\\css\\style2.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\about\\1.mp4",
+      "PackagePath": "staticwebassets\\img\\about\\1.mp4"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\about\\a1.png",
+      "PackagePath": "staticwebassets\\img\\about\\a1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\about\\a2.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\a2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\about\\a3.png",
+      "PackagePath": "staticwebassets\\img\\about\\a3.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\about\\a4.png",
+      "PackagePath": "staticwebassets\\img\\about\\a4.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\about\\a5.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\a5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\about\\a6.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\a6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\about\\banner.png",
+      "PackagePath": "staticwebassets\\img\\about\\banner.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\background.png",
+      "PackagePath": "staticwebassets\\img\\background.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\banner\\b1.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\banner\\b10.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\b10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\banner\\b14.png",
+      "PackagePath": "staticwebassets\\img\\banner\\b14.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\banner\\b16.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\b16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\banner\\b17.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\b17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\banner\\b18.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\b18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\banner\\b19.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\b19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\banner\\b2.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\b2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\banner\\b20.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\b20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\banner\\b4.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\banner\\b7.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\b7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\blog\\b1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\blog\\b2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\b2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\blog\\b3.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\blog\\b4.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\blog\\b5.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\b5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\blog\\b6.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\b6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\blog\\b7.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\b7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\button.png",
+      "PackagePath": "staticwebassets\\img\\button.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\features\\f1.png",
+      "PackagePath": "staticwebassets\\img\\features\\f1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\features\\f2.png",
+      "PackagePath": "staticwebassets\\img\\features\\f2.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\features\\f3.png",
+      "PackagePath": "staticwebassets\\img\\features\\f3.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\features\\f4.png",
+      "PackagePath": "staticwebassets\\img\\features\\f4.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\features\\f5.png",
+      "PackagePath": "staticwebassets\\img\\features\\f5.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\features\\f6.png",
+      "PackagePath": "staticwebassets\\img\\features\\f6.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\hero4.png",
+      "PackagePath": "staticwebassets\\img\\hero4.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\pay\\app.jpg",
+      "PackagePath": "staticwebassets\\img\\pay\\app.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\pay\\pay.png",
+      "PackagePath": "staticwebassets\\img\\pay\\pay.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\pay\\play.jpg",
+      "PackagePath": "staticwebassets\\img\\pay\\play.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\people\\1.png",
+      "PackagePath": "staticwebassets\\img\\people\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\people\\2.png",
+      "PackagePath": "staticwebassets\\img\\people\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\people\\3.png",
+      "PackagePath": "staticwebassets\\img\\people\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\f1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\f2.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\f3.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\f4.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\f5.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\f5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\f6.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\f6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\f7.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\f7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\f8.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\f8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\n1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\n1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\n2.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\n2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\n3.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\n3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\n4.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\n4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\n5.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\n5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\n6.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\n6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\n7.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\n7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\img\\products\\n8.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\n8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\DoAnWebNangCao\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.DoAnWebNangCao.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.DoAnWebNangCao.props",
+      "PackagePath": "build\\DoAnWebNangCao.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.DoAnWebNangCao.props",
+      "PackagePath": "buildMultiTargeting\\DoAnWebNangCao.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.DoAnWebNangCao.props",
+      "PackagePath": "buildTransitive\\DoAnWebNangCao.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

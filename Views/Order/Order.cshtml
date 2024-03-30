@@ -1,0 +1,108 @@
+﻿@model IEnumerable<Order>
+@{
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+<style>
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    h4 {
+        color: #333;
+    }
+
+    table {
+        width: 100%;
+        box-shadow: none;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .image-cell img {
+        max-width: 80px;
+        max-height: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .no-orders {
+        color: #777;
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+
+<div class="container">
+    <a href="/Identity/Account/Manage">Back</a>
+    <h4>My Orders</h4>
+    @if (Model != null && Model.Count() > 0)
+    {
+        <table>
+            <tr>
+                <th>Order Date</th>
+                <th>Order Status</th>
+                <th>Total Price</th>
+                <th>Details</th>
+            </tr>
+            @foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.CreatedDate.ToString("dd-MM-yyyy")</td>
+                    <td>@order.OrderStatus.StatusName</td>
+                    <td>@order.TotalPrice</td>
+                    <td>
+                        @if (order.OrderDetails != null && order.OrderDetails.Count > 0)
+                        {
+                            <table>
+                                <tr>
+                                    <th>Book</th>
+                                    <th>Image</th>
+                                    <th>Unit Price(INR)</th>
+                                    <th>Total Price</th>
+                                </tr>
+                                @foreach (var item in order.OrderDetails)
+                                {
+                                    <tr>
+                                        <td>@item.Book.BookName</td>
+                                        <td class="image-cell">
+                                            @if (string.IsNullOrEmpty(item.Book.Image))
+                                            {
+                                                <img src="images/NoImage.png" alt="No Image" />
+                                            }
+                                            else
+                                            {
+                                                <img src="/Uploads/@item.Book.Image" alt="@item.Book.BookName" />
+                                            }
+                                        </td>
+                                        <td>@item.Book.Price X @item.Quantity</td>
+                                        <td>@(item.Book.Price * item.Quantity)</td>
+                                    </tr>
+                                }
+                            </table>
+                        }
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+    else
+    {
+        <div class="no-orders">
+            <p>No orders</p>
+        </div>
+    }
+</div>

@@ -1,0 +1,156 @@
+﻿@model DoAnWebNangCao.Data.ProductIndexViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+<style>
+    .Filter-Container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Filter-Container #filtersection {
+        width: 100%;
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+
+    .Filter-Title{
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .Filter-Container #product1 {
+        width: 70%;
+        margin-right: 80px;
+    }
+    .btn-filter{
+        background-color: #088178;
+        border-radius: 5px;
+        color: #fff;
+        width: 150px;
+        height: 50px;
+        margin-top: 15px;
+    }
+
+    .btn-filter:hover{
+        background-color: #085299;
+    }
+
+    #priceSort{
+        width: 120px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+
+</style>
+<div>
+    <div class="Filter-Title">
+        <h2>Shop Products</h2>
+        <p>Summer Collection New Mordern Design</p>
+    </div>
+    <div class="Filter-Container">
+        @using (Html.BeginForm("Filter", "Home", FormMethod.Get, new { @class = "filter-form" }))
+        {
+           <section id="filtersection">
+                       @using (Html.BeginForm("Filter", "Home", FormMethod.Get))
+        {
+            <!-- Các filter hiện có -->
+
+            <div class="form-group">
+                <label for="priceSort">Sort by Price:</label>
+                <select class="form-control" id="priceSort" name="PriceSort">
+                    <option value="asc">Low to High</option>
+                    <option value="desc">High to Low</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-filter">Apply Filters</button>
+        }
+               <p>Select Your Author <br> and Genre you like</p>
+                <div class="filter-section">
+                    <h4>Authors</h4>
+                    <div class="checkbox-list">
+                        @foreach (var author in Model.Filter.Authors)
+                        {
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="author-@author.Id"
+                                       name="Filter.SelectedAuthorIds" value="@author.Id"
+                                @(author.IsSelected ? "checked" : "")>
+                                <label for="author-@author.Id">@author.AuthorName</label>
+                            </div>
+                        }
+                    </div>
+
+                    <h4>Genres</h4>
+                    <div class="checkbox-list">
+                        @foreach (var genre in Model.Filter.Genres)
+                        {
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="genre-@genre.Id"
+                                       name="Filter.SelectedGenreIds" value="@genre.Id"
+                                @(genre.IsSelected ? "checked" : "")>
+                                <label for="genre-@genre.Id">@genre.GenreName</label>
+                            </div>
+                        }
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-filter">Apply Filter</button>
+                </div>
+           </section>
+        }
+
+
+        <section id="product1">
+            <div class="pro-container">
+                @foreach (var book in Model.Books)
+                {
+                    <a class="btn btn-secondary btn-sm" asp-action="Detail" asp-route-id="@book.Id">
+                        <div class="pro" onclick="redirectToDetail(@book.Id)">
+                            <img style="width:100%;height:200px" src="/Uploads/@book.Image" alt="...">
+                            <div class="des">
+                                <span>Tên Sách: @book.BookName</span>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>Giá: @book.Price</h4>
+                            </div>
+                            <a href="#" class="cart" onclick="add(@book.Id)"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                        </div>
+                    </a>
+                }
+            </div>
+        </section>
+    </div>
+</div>
+@section Scripts{
+    <script>
+        async function add(bookId) {
+            var usernameEl = document.getElementById("username");
+            if (usernameEl == null) {
+                window.location.href = "/Identity/Account/Login";
+                //var username=usernameEl.innerText;
+                //  if(username.length<1){
+                //      window.location.href="/Identity/Account/Login";
+                //  }
+            }
+            try {
+                var response = await fetch(`/Cart/AddItem?bookId=${bookId}`);
+                console.log(bookId)
+                if (response.status == 200) {
+                    var result = await response.json();
+                    var cartCountEl = document.getElementById("cartCount");
+                    cartCountEl.innerHTML = result;
+                    window.location.href = "#cartCount";
+                }
+            }
+            catch (err) {
+                console.log(err);
+            }
+        }
+    </script>
+}

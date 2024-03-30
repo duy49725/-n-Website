@@ -1,0 +1,84 @@
+﻿@model Cart
+@{
+    double totalAmount = ViewBag.TotalAmount ?? 0.0;
+}
+<section id="page-header" class="about-header">
+    <h2>#Let's Talk</h2>
+    <p>Leave a message, We love to hear from you!</p>
+</section>
+
+<section id="cart" class="section-p1">
+@if (Model != null && Model.CartDetails != null && Model.CartDetails.Count > 0)
+{
+     <table width="100%">
+        <tr>
+            <th>Book</th>
+            <th>Image</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th>Action</th>
+        </tr>
+        @foreach (var item in Model.CartDetails)
+        {
+            <tr>
+                <td>@item.Book.BookName</td>
+                <td>
+                    @if (string.IsNullOrEmpty(item.Book.Image))
+                    {
+                        <img src="/image/NoImage.png" style="width: 80px; height: 100px">
+                    }
+                    else
+                    {
+                        <img style="height: 60px; width: 80px" src="/Uploads/@item.Book.Image" />
+                    }
+                </td>
+                <td>@item.UnitPrice</td>
+                <td>@item.Quantity</td>
+                <td>@(item.UnitPrice * item.Quantity)</td>
+                <td>
+                    <a class="btn btn-info add-item" data-bookid="@item.BookId" href="javascript:void(0)">+</a>
+                    <a class="btn btn-info delete-item" data-bookid="@item.BookId" href="#">-</a>
+                </td>
+            </tr>
+        }
+    </table>
+}
+</section>
+<section id="cart-add" class="section-p1">
+    <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+            <input type="text" id="couponCode" placeholder="Enter Your Coupon">
+            <button class="btn btn-primary" onclick="applyCoupon()">Apply Coupon</button>
+        </div>
+        <div id="couponMessage" style="color: red; margin-top: 10px;"></div>
+    </div>
+    <div id="subtotal">
+        @Html.Partial("_CartTotalPartial", totalAmount)
+    </div>
+</section>
+<script>
+    function applyCoupon() {
+        var couponCode = document.getElementById('couponCode').value;
+
+        fetch(`/Cart/ApplyCoupon?couponCode=${couponCode}`, {
+            method: 'POST'
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('couponMessage').innerText = "Coupon applied successfully!";
+                    // Update Discount and Total amount here
+                    var newTotal = @ViewBag.Subtotal - data.discountAmount;
+                    document.getElementById('discountAmount').innerText = '$ ' + data.discountAmount;
+                    document.getElementById('totalAmount').innerText = '$ ' + newTotal.toFixed(2);
+                } else {
+                    document.getElementById('couponMessage').innerText = data.message;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+</script>

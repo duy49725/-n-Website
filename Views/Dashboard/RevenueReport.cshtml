@@ -1,0 +1,179 @@
+﻿@model DoAnWebNangCao.Data.DashboardViewModel
+@{
+    var date = DateTime.Now.ToString("dd/MM/yyyy");
+}
+<h3 class="main-title">Today'data</h3>
+<div class="card-wrapper">
+    <div class="payment-card light-red">
+        <div class="card-header">
+            <div class="amount">
+                <span class="title">
+                    Yearly Revenue
+                </span>
+                <span class="amount-value">
+                    $
+                    @foreach (var report in Model.YearlyRevenue)
+                    {
+                        @report.TotalRevenue
+                    }
+                </span>
+            </div>
+            <i class="fas fa-dollar-sign icon"></i>
+        </div>
+        <span class="card-detail">
+            **** **** **** 3282
+        </span>
+    </div>
+    <div class="payment-card light-purple">
+        <div class="card-header">
+            <div class="amount">
+                <span class="title">
+                    Daily revenue
+                </span>
+                <span class="amount-value">
+                    $
+                    @if (Model.DailyRevenue != null && Model.DailyRevenue.Any())
+                    {
+                        <span>@Model.TodayRevenue.FirstOrDefault()?.TotalRevenue</span>
+                    }
+                    else
+                    {
+                        <span>No data</span>
+                    }
+                </span>
+            </div>
+            <i class="fas fa-dollar-sign icon dark-purple"></i>
+        </div>
+        <span class="card-detail">
+            **** **** **** 3282
+        </span>
+    </div>
+    <div class="payment-card light-green">
+        <div class="card-header">
+            <div class="amount">
+                <span class="title">
+                    Total Product
+                </span>
+                <span class="amount-value">
+                    @Model.TotalProduct
+                </span>
+            </div>
+            <i class="fas fa-dollar-sign icon dark-green"></i>
+        </div>
+        <span class="card-detail">
+            **** **** **** 3282
+        </span>
+    </div>
+    <div class="payment-card light-blue">
+        <div class="card-header">
+            <div class="amount">
+                <span class="title">
+                    Total Order
+                </span>
+                <span class="amount-value">
+                    @Model.TotalOrderbyDay
+                </span>
+            </div>
+            <i class="fas fa-dollar-sign icon dark-blue"></i>
+        </div>
+        <span class="card-detail">
+            **** **** **** 3282
+        </span>
+    </div>
+</div>
+<h2>Daily Revenue</h2>
+@if (Model.DailyRevenue != null && Model.DailyRevenue.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Total Revenue</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var report in Model.DailyRevenue)
+            {
+                <tr>
+                    <td>@report.Date.ToShortDateString()</td>
+                    <td>@report.TotalRevenue.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No data available for daily revenue.</p>
+}
+
+<h2>Monthly Revenue</h2>
+@if (Model.MonthlyRevenue != null && Model.MonthlyRevenue.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Total Revenue</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var report in Model.MonthlyRevenue)
+            {
+                <tr>
+                    <td>@report.Date.ToString("MMMM yyyy")</td>
+                    <td>@report.TotalRevenue.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No data available for monthly revenue.</p>
+}
+
+<h2>Product Revenue and Sold Quantity</h2>
+@if (Model.ProductRevenues != null && Model.ProductRevenues.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Total Revenue</th>
+                <th>Sold Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.ProductRevenues)
+            {
+                <tr>
+                    <td>@product.ProductName</td>
+                    <td>@product.TotalRevenue.ToString("C")</td>
+                    <td>@product.SoldQuantity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No data available for product revenue and sold quantity.</p>
+}
+<table>
+    <thead>
+        <tr>
+            <th>Status Name</th>
+            <th>Total Orders</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.TotalOrdersByStatus)
+        {
+            <tr>
+                <td>@item.StatusName</td>
+                <td>@item.TotalOrders</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<DoAnWebNangCao.Models.Book>
+@{
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+
+
+<section id="product1" class="section-p1">
+    <h1>Discounted Books</h1>
+    <div class="pro-container">
+        @foreach (var book in Model)
+        {
+            <a class="btn btn-secondary btn-sm" asp-action="Detail" asp-route-id="@book.Id">
+                <div class="pro" onclick="redirectToDetail(@book.Id)">
+                    <img style="width:100%;height:200px" src="/Uploads/@book.Image" alt="...">
+                    <div class="des">
+                        <span>Tên Sách: @book.BookName</span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Giá: @book.Price</h4>
+                        <h4>Giam Gia: @book.DiscountPercentage %</h4>
+                        <h4>Giá sau giam: @(book.Price - (book.DiscountPercentage * book.Price) / 100)</h4>
+                    </div>
+                    <a href="#" class="cart" onclick="add(@book.Id)"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                </div>
+            </a>
+        }
+    </div>
+</section>

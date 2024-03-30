@@ -1,0 +1,68 @@
+﻿@inject SignInManager<User> SignInManager
+@{
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+<ul class="nav flex-column">
+    <li class="nav-item">
+        <a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Profile</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword">Password</a>
+    </li>
+    @if (hasExternalLogins)
+    {
+        <li id="external-logins" class="nav-item">
+            <a id="external-login" class="nav-link @ManageNavPages.ExternalLoginsNavClass(ViewContext)" asp-page="./ExternalLogins">External logins</a>
+        </li>
+    }
+    <li class="nav-item">
+        <a class="nav-link @ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)" id="two-factor" asp-page="./TwoFactorAuthentication">Two-factor authentication</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @ManageNavPages.PersonalDataNavClass(ViewContext)" id="personal-data" asp-page="./PersonalData">Personal data</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/Order/Order">My Orders</a>
+    </li>
+</ul>
+<style>
+    /* Menu dọc */
+    .nav {
+        width: 250px; /* Độ rộng của menu */
+        margin: auto; /* Căn giữa trên màn hình */
+        padding: 20px;
+        background-color: #f8f9fa; /* Màu nền */
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Mỗi mục menu */
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    /* Liên kết trong mỗi mục menu */
+    .nav-link {
+        font-size: 18px;
+        color: #333;
+        transition: all 0.3s ease; /* Hiệu ứng khi hover */
+    }
+
+    /* Hiệu ứng hover */
+    .nav-link:hover {
+        background-color: #007bff; /* Màu nền khi hover */
+        color: #fff; /* Màu chữ khi hover */
+        border-radius: 3px;
+    }
+
+    /* Mục menu active */
+    .nav-link.active {
+        background-color: #007bff; /* Màu nền khi active */
+        color: #fff; /* Màu chữ khi active */
+        border-radius: 3px;
+    }
+</style>

@@ -1,0 +1,35 @@
+﻿@model IQueryable<DoAnWebNangCao.Models.Book>
+
+@{
+    ViewData["Title"] = "Book Detail";
+}
+
+@foreach (var book in Model)
+{
+    <div>
+        <h1>@book.BookName</h1>
+        <p><strong>Price:</strong> @book.Price</p>
+        <p><strong>Release Year:</strong> @book.ReleaseYear</p>
+        <p><strong>Description:</strong> @book.Describle</p>
+
+        <h3>Genres:</h3>
+        <p>@book.GenreNames</p>
+
+        <h3>Publisher:</h3>
+        <p>@book.PublisherName</p>
+
+        <h3>Authors:</h3>
+        <p>@book.AuthorNames</p>
+
+        <h3>Discount:</h3>
+        <p>@book.DiscountPercentage</p>
+
+        <h3>Discount Price:</h3>
+        <p>@(book.Price - (book.DiscountPercentage * book.Price) / 100)</p>
+
+        @if (!string.IsNullOrEmpty(book.Image))
+        {
+            <img style="height: 60px; width: 80px" src="/Uploads/@book.Image" />
+        }
+    </div>
+}

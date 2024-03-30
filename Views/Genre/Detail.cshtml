@@ -1,0 +1,24 @@
+﻿@model DoAnWebNangCao.Models.Genre
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail</h1>
+
+<div>
+    <h4>Genre</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GenreName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GenreName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="GenreList">Back to List</a>
+</div>

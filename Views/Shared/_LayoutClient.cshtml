@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MVCTutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/style2.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <section id="header">
+            <a href="#"><i class="ri-book-3-line"></i>E-Book</a>
+            <div>
+                <ul id="navbar">
+                    <li><a class="active" href="../Home/Index">Home</a></li>
+                    <li><a asp-controller="Home" asp-action="Filter">Shop</a></li>
+                    <li><a href="../Blogs/Blog">Blog</a></li>
+                    <li><a href="../Abouts/About">About</a></li>
+                    <li><a href="../Contact/Contact">Contact</a></li>
+                    <partial name="_LoginPartial.cshtml" />
+                    <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <i id="bar" class="fas fa-outdent"></i>
+                <partial name="_LoginPartial.cshtml" />
+            </div>
+        </section>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get e-mail updates about our latest shop and <span>pecial offers</span>.</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img src="img/logo.png" alt="" class="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> +848793469/816167103</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Infomation</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>Thank you so much for your great and hard work keep it up god bless you</p>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

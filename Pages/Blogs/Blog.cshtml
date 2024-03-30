@@ -1,0 +1,34 @@
+﻿@page
+@model DoAnWebNangCao.Pages.Blogs.BlogModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+	Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+<section id="page-header" class="blog-header">
+    <h2>#readmore</h2>
+    <p>Read all case studies about our products!</p>
+</section>
+
+<section id="blog">
+    @foreach (var item in Model.Blog)
+    {
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="../img/blog/b1.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>@item.Title</h4>
+                <p>
+                    @item.Content
+                </p>
+                <a href="@item.Link">CONINUE READING</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+    }
+</section>
+<section id="pagination" class="section-p1">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+</section>

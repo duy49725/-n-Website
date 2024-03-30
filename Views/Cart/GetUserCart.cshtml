@@ -1,0 +1,67 @@
+﻿@model Cart
+@{
+    ViewData["Title"] = "GetUsercart";
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+<div id="cartContent">
+    <!-- Partial View sẽ được load vào đây -->
+    @Html.Partial("_CartPartialView", Model)
+</div>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#cartContent').on('click', '.add-item', function (e) {
+                e.preventDefault();
+                var bookId = $(this).data('bookid');
+                var url = '/Cart/AddItem?bookId=' + bookId;
+                updateCart(url);
+            });
+
+            $('#cartContent').on('click', '.delete-item', function (e) {
+                e.preventDefault();
+                var bookId = $(this).data('bookid');
+                var url = '/Cart/DeleteItem?bookId=' + bookId;
+                updateCart(url);
+            });
+
+            function updateCart(url) {
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    success: function (result) {
+                        $('#cartContent').html(result);
+                        updateTotal(); // Sau khi cập nhật giỏ hàng, cập nhật tổng tiền
+                    }
+                });
+            }
+
+            function updateCart(url) {
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    success: function (result) {
+                        $('#cartContent').html(result);
+                        updateTotal(); // Sau khi cập nhật giỏ hàng, cập nhật tổng tiền
+                    }
+                });
+            }
+
+            function updateTotal() {
+                $.ajax({
+                    url: '/Cart/GetTotalAmount',
+                    type: 'GET',
+                    success: function (result) {
+                        $('#subtotal').html(result.subtotal);
+                        $('#discountAmount').html(result.discountAmount);
+                        $('#totalAmount').html(result.totalAmount);
+                    }
+                });
+            }
+
+        });
+    </script>
+
+}
+
+
+

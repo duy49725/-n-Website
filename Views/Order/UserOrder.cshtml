@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Order>
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div style="width: 100%" class="mt-2">
+	<a href="/Identity/Account/Manage">Back</a>
+	<h4>My Orders</h4>
+	@if (Model != null && Model.Count() > 0)
+	{
+		<table class="table table-striped">
+			<tr>
+				<th>Order Date</th>
+				<th>Order status</th>
+			</tr>
+			@foreach (var order in Model)
+			{
+				<tr>
+					<th>@order.CreatedDate.ToString("dd-MM-yyyy")</th>
+					<td>@order.OrderStatus.StatusName</td>
+				</tr>
+				@if (order.OrderDetails != null && order.OrderDetails.Count > 0)
+				{
+					<tr>
+						<td>
+							<table class="table table-striped">
+								<tr>
+									<td>
+										Total:
+									</td>
+									<td>
+										@order.TotalPrice
+									</td>
+								</tr>
+								<tr>
+									<th>Book</th>
+									<th>Image</th>
+									<th>Unit Price(INR)</th>
+									<th>Total Price</th>
+								</tr>
+								@foreach (var item in order.OrderDetails)
+								{
+									<tr>
+										<td>@item.Book.BookName</td>
+										<td>
+											@if (string.IsNullOrEmpty(item.Book.Image))
+											{
+												<img src="/images/NoImage.png" style="width:80px;height:100px" />
+											}
+											else
+											{
+												<img src="@item.Book.Image" style="width:80px;height:100px" />
+											}
+										</td>
+										<td>@item.Book.Price X @item.Quantity</td>
+										<td>@(item.Book.Price * item.Quantity)</td>
+									</tr>
+								}
+							</table>
+						</td>
+					</tr>
+				}
+			}
+		</table>
+	}
+	else
+	{
+		<h5>No orders</h5>
+	}
+</div>
