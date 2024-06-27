@@ -177,10 +177,8 @@ namespace DoAnWebNangCao.Controllers
                     break;
             }
 
-            // Get Filtered Books
             var filteredBooks = booksQuery.ToList();
 
-            // Pass the ViewModel to the View
             var viewModel = new ProductIndexViewModel
             {
                 Filter = filter,
